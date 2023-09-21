@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Compile the Java source code
-                sh 'javac MyApp.java'
+                sh 'javac GUV.java'
             }
         }
 
         stage('Run') {
             steps {
                 // Run the Java program
-                sh 'java MyApp'
+                sh 'java GUV'
             }
         }
     }
